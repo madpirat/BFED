@@ -1,8 +1,21 @@
-.title {
+/* .title {
     color: red;
+} */
+body {
+    background: #fdf0d5;
+}
+
+
+#title {
+    color: #669bbc;
 }
 
 .subtitle {
-    color: blue;
+    color: #003049;
 
+}
+
+img {
+    width: 50%;
+    height: 50%;
 }
