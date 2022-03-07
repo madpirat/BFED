@@ -2,9 +2,16 @@
     color: red;
 } */
 body {
+    font-size: 1.25em;
+    font-family: "Lato", sans-serif;
+    text-align: justify;
     background: #fdf0d5;
 }
 
+img {
+    width: 50%;
+    height: auto;
+}
 
 #title {
     color: #669bbc;
@@ -13,9 +20,4 @@ body {
 .subtitle {
     color: #003049;
 
-}
-
-img {
-    width: 50%;
-    height: 50%;
 }
