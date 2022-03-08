@@ -8,16 +8,15 @@ body {
     background: #fdf0d5;
 }
 
-img {
-    width: 50%;
-    height: auto;
-}
-
 #title {
     color: #669bbc;
 }
 
 .subtitle {
     color: #003049;
+}
 
+#image-main {
+    height: 50%;
+    width: 70%;
 }
