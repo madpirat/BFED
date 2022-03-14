@@ -17,6 +17,28 @@ body {
 }
 
 #image-main {
-    height: 50%;
-    width: 70%;
+    height: 300px;
+    width: 50%;
+    border: 2px solid #003049;
+    padding: 25px;
+}
+
+.container {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    height: 300px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-item {
+    background: #669bbc;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    width: 70px;
+    line-height: 50px;
+    margin: 10px;
 }
