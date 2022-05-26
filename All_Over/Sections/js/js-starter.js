@@ -1,3 +1,4 @@
+/*
 console.log("Hello from separated file!")
 
 var name = "Marcin";
@@ -23,9 +24,30 @@ console.log(schoolNumber);
 schoolTeam = "tennis";
 console.log(schoolTeam);
 
-// alert(schoolTeam);
+alert(schoolTeam);
 
-// var age = prompt("How old are you?");
-// console.log("You are " + age + " years old!");
+var age = prompt("How old are you?");
+console.log("You are " + age + " years old!");
+
+*/
 
 
+// Basic Operators //
+
+var totalDistance, distanceAlex, distanceSam;
+totalDistance = 20;
+
+distanceAlex = totalDistance - 12;
+console.log(distanceAlex);
+
+distanceSam = totalDistance - 7;
+console.log(distanceSam);
+
+// Logical Operators //
+var distanceToSchool, distanceToHome;
+
+distanceToHome = 14;
+distanceToSchool = 6;
+
+var isCloser = distanceToHome < distanceToSchool;
+console.log(isCloser);
