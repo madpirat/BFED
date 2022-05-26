@@ -2,12 +2,14 @@
     border: 1px solid blue;
     padding: 10px;
     display: grid;
-    grid-template: 100px 200px 300px 100px / repeat(3, 1fr);
+    /* grid-template: 100px 200px 300px 100px / repeat(3, 1fr); */
+    grid-template: 1fr/repeat(auto-fit, minmax(200px, 1fr));
+    height: 700px;
     grid-gap: 10px;
 
     /* place-items: ; align-items  justify-items; */
     /* for placing a specific box use place-self under specific box, align-self first, justify-self second */
-    place-items: end center;
+    /* place-items: end center; */
 
     /* GRID AREA CODE FOR POSITION ORDER - in grid-template: remember to add 100px at the end before slash (/) */
     /* grid-template-areas:
