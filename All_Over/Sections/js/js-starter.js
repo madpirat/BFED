@@ -23,9 +23,9 @@ console.log(schoolNumber);
 schoolTeam = "tennis";
 console.log(schoolTeam);
 
-alert(schoolTeam);
+// alert(schoolTeam);
 
-var age = prompt("How old are you?");
-console.log("You are " + age + " years old!");
+// var age = prompt("How old are you?");
+// console.log("You are " + age + " years old!");
 
 
