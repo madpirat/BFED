@@ -4,20 +4,29 @@
     display: grid;
     grid-template: 100px 200px 300px 100px / repeat(3, 1fr);
     grid-gap: 10px;
-    grid-template-areas:
+
+    /* place-items: ; align-items  justify-items; */
+    /* for placing a specific box use place-self under specific box, align-self first, justify-self second */
+    place-items: end center;
+
+    /* GRID AREA CODE FOR POSITION ORDER - in grid-template: remember to add 100px at the end before slash (/) */
+    /* grid-template-areas:
         "A A B"
         "D E B"
         "G H I"
         "C C F"
-    ;
+    ; */
+    /* END POSITION ORDER */
 }
 
 .box {
     background-color: orange;
     border: 1px solid blue;
+    /* padding: 20px; */
 }
 
-.box1 {
+/* GRID AREA CODE FOR POSITION ORDER */
+/* .box1 {
     grid-area: A;
 }
 
@@ -51,7 +60,9 @@
 
 .box9 {
     grid-area: I;
-}
+} */
+
+/* END POSITION ORDER */
 
 
 /* .box4 {
