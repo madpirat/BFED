@@ -79,12 +79,58 @@ console.log("You are " + age + " years old!");
 
 // TERNARY OPERATOR
 
-var grade = 80;
+// var grade = 80;
 
-grade < 45
-    ? console.log('You can not go to next class')
-    : console.log('You can go to next class')
+// grade < 45
+//     ? console.log('You can not go to next class')
+//     : console.log('You can go to next class')
 
 
-var result = grade < 45 ? 'failure' : 'success';
-console.log(result);
+// var result = grade < 45 ? 'failure' : 'success';
+// console.log(result);
+
+// SWITCH STATEMENTS
+
+var day;
+day = 'monday';
+
+switch (day) {
+    case 'saturday':
+        console.log('I like Saturdays!');
+        break;
+    case 'monday':
+        console.log('I do not like Mondays!');
+        break;
+    case ('friday'):
+        console.log('I really like Fridays!');
+        break;
+    default:
+        console.log('I do not know the day!');
+        break;
+}
+
+// var grade;
+// grade = 55; 
+
+// if (grade < 40) {
+//     console.log('you can not go to the next class.');
+// } else if (grade > 40 && grade < 45) {
+//     console.log('you can not go to the next class but you can enter the exam.');
+// } else {
+//     console.log('You can go to the next class!');
+// }
+
+var grade = 44;
+
+switch (true) {
+    case (grade < 40):
+        console.log('You can not go to next class');
+        break;
+    case (grade >= 40 && grade < 45):
+        console.log('You can not go to next class but you can enter the exam');
+        break;
+    default:
+        console.log('You can go to next class');
+        break;
+
+}
