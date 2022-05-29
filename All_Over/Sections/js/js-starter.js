@@ -91,23 +91,23 @@ console.log("You are " + age + " years old!");
 
 // SWITCH STATEMENTS
 
-var day;
-day = 'monday';
+// var day;
+// day = 'monday';
 
-switch (day) {
-    case 'saturday':
-        console.log('I like Saturdays!');
-        break;
-    case 'monday':
-        console.log('I do not like Mondays!');
-        break;
-    case ('friday'):
-        console.log('I really like Fridays!');
-        break;
-    default:
-        console.log('I do not know the day!');
-        break;
-}
+// switch (day) {
+//     case 'saturday':
+//         console.log('I like Saturdays!');
+//         break;
+//     case 'monday':
+//         console.log('I do not like Mondays!');
+//         break;
+//     case ('friday'):
+//         console.log('I really like Fridays!');
+//         break;
+//     default:
+//         console.log('I do not know the day!');
+//         break;
+// }
 
 // var grade;
 // grade = 55; 
@@ -120,17 +120,40 @@ switch (day) {
 //     console.log('You can go to the next class!');
 // }
 
-var grade = 44;
+// var grade = 44;
 
-switch (true) {
-    case (grade < 40):
-        console.log('You can not go to next class');
-        break;
-    case (grade >= 40 && grade < 45):
-        console.log('You can not go to next class but you can enter the exam');
-        break;
-    default:
-        console.log('You can go to next class');
-        break;
+// switch (true) {
+//     case (grade < 40):
+//         console.log('You can not go to next class');
+//         break;
+//     case (grade >= 40 && grade < 45):
+//         console.log('You can not go to next class but you can enter the exam');
+//         break;
+//     default:
+//         console.log('You can go to next class');
+//         break;
 
+// }
+
+// Code Quiz #2
+
+var alexGrade, saraGrade, nancyGrade;
+
+alexGrade = (90 + 80 + 95) / 3;
+console.log('Alex average grade', alexGrade);
+
+saraGrade = (89 + 76 + 98) / 3;
+console.log('Sara average grade', saraGrade);
+
+nancyGrade = (42 + 98 + 83) / 3;
+console.log('Nancy average grade', nancyGrade);
+
+if (alexGrade > saraGrade && alexGrade > nancyGrade) {
+    console.log('Alex has the highest grade', alexGrade);
+} else if (saraGrade > alexGrade && saraGrade > nancyGrade) {
+    console.log('Sara has the higest grade',);
+} else if (nancyGrade > alexGrade && nancyGrade > saraGrade) {
+    console.log('Nancy has the highest grade',);
+} else {
+    console.log('Maybe there is same average');
 }
