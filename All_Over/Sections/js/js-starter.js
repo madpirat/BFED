@@ -137,23 +137,40 @@ console.log("You are " + age + " years old!");
 
 // Code Quiz #2
 
-var alexGrade, saraGrade, nancyGrade;
+// var alexGrade, saraGrade, nancyGrade;
 
-alexGrade = (90 + 80 + 95) / 3;
-console.log('Alex average grade', alexGrade);
+// alexGrade = (90 + 80 + 95) / 3;
+// console.log('Alex average grade', alexGrade);
 
-saraGrade = (89 + 76 + 98) / 3;
-console.log('Sara average grade', saraGrade);
+// saraGrade = (89 + 76 + 98) / 3;
+// console.log('Sara average grade', saraGrade);
 
-nancyGrade = (42 + 98 + 83) / 3;
-console.log('Nancy average grade', nancyGrade);
+// nancyGrade = (42 + 98 + 83) / 3;
+// console.log('Nancy average grade', nancyGrade);
 
-if (alexGrade > saraGrade && alexGrade > nancyGrade) {
-    console.log('Alex has the highest grade', alexGrade);
-} else if (saraGrade > alexGrade && saraGrade > nancyGrade) {
-    console.log('Sara has the higest grade',);
-} else if (nancyGrade > alexGrade && nancyGrade > saraGrade) {
-    console.log('Nancy has the highest grade',);
-} else {
-    console.log('Maybe there is same average');
+// if (alexGrade > saraGrade && alexGrade > nancyGrade) {
+//     console.log('Alex has the highest grade', alexGrade);
+// } else if (saraGrade > alexGrade && saraGrade > nancyGrade) {
+//     console.log('Sara has the higest grade',);
+// } else if (nancyGrade > alexGrade && nancyGrade > saraGrade) {
+//     console.log('Nancy has the highest grade',);
+// } else {
+//     console.log('Maybe there is same average');
+// }
+
+// LOOPS
+// DRY - DO NOT REPEAT YOURSELF
+
+// WHILE LOOPS
+
+// while(situation) {
+// if the situation is correct, it will run the code here.
+// }
+
+var number = 1;
+
+while (number < 11) {
+    console.log(number);
+    number++; //number = number +1
+
 }
