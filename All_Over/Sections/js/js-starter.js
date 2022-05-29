@@ -65,15 +65,26 @@ console.log("You are " + age + " years old!");
 //     console.log('You can go to the next class!');
 // }
 
-var age;
-age = 24;
+// var age;
+// age = 24;
 
-if (age < 18) {
-    console.log('You can not enter the cafe!');
-} else if (age < 23) {
-    console.log('You can enter the cafe but you can not drink alcohol!');
-} else {
-    console.log('You can enter the cafe and drink alcohol!');
-}
+// if (age < 18) {
+//     console.log('You can not enter the cafe!');
+// } else if (age < 23) {
+//     console.log('You can enter the cafe but you can not drink alcohol!');
+// } else {
+//     console.log('You can enter the cafe and drink alcohol!');
+// }
 
 
+// TERNARY OPERATOR
+
+var grade = 80;
+
+grade < 45
+    ? console.log('You can not go to next class')
+    : console.log('You can go to next class')
+
+
+var result = grade < 45 ? 'failure' : 'success';
+console.log(result);
