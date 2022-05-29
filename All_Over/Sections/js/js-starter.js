@@ -175,24 +175,51 @@ console.log("You are " + age + " years old!");
 
 // }
 
-// WHILE LOOPS QUIZ 
+// // WHILE LOOPS QUIZ 
 
-// 1. Pritn even mumber from 132 to 148 on the console
+// // 1. Print even mumber from 132 to 148 on the console
 
-var number = 132;
+// var number = 132;
 
-while (number <= 148) {
-    console.log(number);
-    number += 2
+// while (number <= 148) {
+//     console.log(number);
+//     number += 2
+// }
+
+// // 2. Print numbers between 25 and 100, divisible (podzielne) by 7, to the console
+
+// var count = 25;
+
+// while (count <= 100) {
+//     if (count % 7 === 0) {
+//         console.log(count);
+//     }
+//     count++
+// }
+
+// FOR LOOPS
+
+// for(init; condition; step) {
+// if the condition is correct, it will run the code here.
+// }
+
+// for (var number = 1; number < 11; number++) {
+//     console.log(number);
+// }
+
+// FOR LOOP QUIZ
+// 1. Print even mumber from 132 to 148 on the console
+
+for (var i = 132; i <= 148; i++) {
+    if (i % 2 !== 0) {
+        console.log(i);
+    }
 }
 
 // 2. Print numbers between 25 and 100, divisible (podzielne) by 7, to the console
 
-var count = 25;
-
-while (count <= 100) {
-    if (count % 7 === 0) {
-        console.log(count);
+for (var i = 25; i <= 100; i++) {
+    if ((i % 7 === 0) && (i % 5 === 0)) {
+        console.log(i);
     }
-    count++
 }
