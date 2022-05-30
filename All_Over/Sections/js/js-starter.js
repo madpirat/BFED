@@ -298,13 +298,33 @@ console.log("You are " + age + " years old!");
 // var age = calculateAge(1987);
 // console.log('You are', age, 'years of age');
 
-console.log('If you are an adult based on your age, you can enter the cafe');
-function enterCafe(Age) {
-    if (Age < 18) {
-        return 'You CAN NOT enter the cafe!';
-    }
-    return 'You CAN enter the cafe!';
+// console.log('If you are an adult based on your age, you can enter the cafe');
+// function enterCafe(Age) {
+//     if (Age < 18) {
+//         return 'You CAN NOT enter the cafe!';
+//     }
+//     return 'You CAN enter the cafe!';
+// }
+
+// var cafe = enterCafe(35);
+// console.log(cafe);
+
+// FUNCTION DELCARATION AND EXPRESSION 
+
+//function delcaration
+function calculateAge(birthYear) {
+    return 2020 - birthYear;
 }
 
-var cafe = enterCafe(35);
-console.log(cafe);
+//function epression
+var calculateAge = function (birthYear) {
+    return 2020 - birthYear;
+}
+
+var age = calculateAge(1981);
+console.log(age);
+
+calculateAge = 'John';
+console.log(calculateAge);
+
+var Age = calculateAge(1990);
