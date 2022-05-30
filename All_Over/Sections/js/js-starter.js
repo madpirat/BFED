@@ -244,33 +244,67 @@ console.log("You are " + age + " years old!");
 //     }
 // }
 
-// FUNCTIONS
+// // FUNCTIONS
 
-function doSomething() {
-    console.log('Hello World!');
-    console.log('Goodbye World!');
-    console.log('How are you?');
-}
+// function doSomething() {
+//     console.log('Hello World!');
+//     console.log('Goodbye World!');
+//     console.log('How are you?');
+// }
 
-doSomething();
+// doSomething();
 
-// FUNCTIONS WITH ARGUMENTS
+// // FUNCTIONS WITH ARGUMENTS
 
-function sayHi(name) {
-    console.log('Hi' + ' ' + name);
-}
+// function sayHi(name) {
+//     console.log('Hi' + ' ' + name);
+// }
 
-sayHi('Marcin');
-sayHi('Ania');
+// sayHi('Marcin');
+// sayHi('Ania');
 
+// function cube(number) {
+//     console.log(number * number * number);
+// }
+
+// cube(14);
+
+// function bmi(height, weight) {
+//     console.log(weight / (height * height));
+// }
+
+// bmi(1.85, 90)
+
+// function checkUserInfo(email, password) {
+//     if () {
+
+//     }
+// }
+
+// FUNCTION RETURN KEYWORD
+
+console.log('Cube formula with the lenght of 5');
 function cube(number) {
-    console.log(number * number * number);
+    return (number * number * number);
 }
 
-cube(14);
+var num = cube(5);
+console.log(num);
 
-function bmi(height, weight) {
-    console.log(weight / (height * height));
+console.log('Age Calculator for birth year 1987');
+function calculateAge(birthYear) {
+    return 2022 - birthYear;
+}
+var age = calculateAge(1987);
+console.log('You are', age, 'years of age');
+
+console.log('If you are an adult based on your age, you can enter the cafe');
+function isAdult(Age) {
+    if (Age < 18) {
+        return 'You CAN NOT enter the cafe!';
+    }
+    return 'You CAN enter the cafe!';
 }
 
-bmi(1.85, 90)
+var cafe = isAdult(35);
+console.log(cafe);
