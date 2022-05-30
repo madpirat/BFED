@@ -224,19 +224,32 @@ console.log("You are " + age + " years old!");
 //     }
 // }
 
-console.log('Continue Statement');
+// CONTINUE AND BREAK STATEMENTS
+//1. Print numbers from 1 to 10 divisable by 2, print only even numbers
+//2. print numbers from 1 to 10 divisible by 2, print only one number and then stop. 
 
-for (var i = 1; i <= 10; i++) {
-    if (i % 2 !== 0) continue;
-    console.log(i);
+// console.log('Continue Statement');
+
+// for (var i = 1; i <= 10; i++) {
+//     if (i % 2 !== 0) continue;
+//     console.log(i);
+// }
+
+// console.log('Break Statement');
+
+// for (var i = 1; i <= 10; i++) {
+//     if (i % 2 === 0) {
+//         console.log(i);
+//         break;
+//     }
+// }
+
+// FUNCTIONS
+
+function doSomething() {
+    console.log('Hello World!');
+    console.log('Goodbye World!');
+    console.log('How are you?');
 }
 
-console.log('Break Statement');
-
-for (var i = 1; i <= 10; i++) {
-    if (i % 2 === 0) {
-        console.log(i);
-        break;
-    }
-
-}
+doSomething();
