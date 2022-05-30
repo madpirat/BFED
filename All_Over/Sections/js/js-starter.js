@@ -298,13 +298,13 @@ console.log("You are " + age + " years old!");
 // var age = calculateAge(1987);
 // console.log('You are', age, 'years of age');
 
-// console.log('If you are an adult based on your age, you can enter the cafe');
-// function isAdult(Age) {
-//     if (Age < 18) {
-//         return 'You CAN NOT enter the cafe!';
-//     }
-//     return 'You CAN enter the cafe!';
-// }
+console.log('If you are an adult based on your age, you can enter the cafe');
+function enterCafe(Age) {
+    if (Age < 18) {
+        return 'You CAN NOT enter the cafe!';
+    }
+    return 'You CAN enter the cafe!';
+}
 
-// var cafe = isAdult(35);
-// console.log(cafe);
+var cafe = enterCafe(35);
+console.log(cafe);
