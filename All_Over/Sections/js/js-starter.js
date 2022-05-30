@@ -253,3 +253,24 @@ function doSomething() {
 }
 
 doSomething();
+
+// FUNCTIONS WITH ARGUMENTS
+
+function sayHi(name) {
+    console.log('Hi' + ' ' + name);
+}
+
+sayHi('Marcin');
+sayHi('Ania');
+
+function cube(number) {
+    console.log(number * number * number);
+}
+
+cube(14);
+
+function bmi(height, weight) {
+    console.log(weight / (height * height));
+}
+
+bmi(1.85, 90)
