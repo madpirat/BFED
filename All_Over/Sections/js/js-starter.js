@@ -316,15 +316,64 @@ function calculateAge(birthYear) {
     return 2020 - birthYear;
 }
 
-//function epression
-var calculateAge = function (birthYear) {
-    return 2020 - birthYear;
+// //function expression
+// var calculateAge = function (birthYear) {
+//     return 2020 - birthYear;
+// }
+
+// var age = calculateAge(1981);
+// console.log(age);
+
+// calculateAge = 'John';
+// console.log(calculateAge);
+
+// var Age = calculateAge(1990);
+
+// FUNCTION QUIZ
+// 1. Create a function called 'substraction', this function takes 
+// two arguments X and Y, then substracts one of these arguent from the
+// other and returns the result. Then console log the result. 
+
+function substraction(X, Y) {
+    return X - Y;
+}
+var arguments = substraction(10, 5);
+console.log(arguments);
+
+// 2. Declare a function called 'is Odd', this function is gonna take one
+// argument and it is gonna check if that argument is an 'odd number',
+// then it needs to return a Boolean and console that.
+
+var isOdd = function (number) {
+    if (number % 2 !== 0) {
+        return 'number is odd';
+    }
+    return 'number is even';
 }
 
-var age = calculateAge(1981);
-console.log(age);
+console.log(isOdd(5));
 
-calculateAge = 'John';
-console.log(calculateAge);
 
-var Age = calculateAge(1990);
+// function isOdd(i) {
+//     if (i % 2 !== 0) {
+//         return 'is odd number';
+//     }
+//     return 'is even number'
+// }
+// var result = isOdd(3);
+// console.log(result);
+
+// 3. Declare a function called 'addition', it is gonna take one argument,
+// then it needs to sum up all numbers from 1 to that argument and return
+// the total value. Then you need to console log that total.
+
+var addition = function (number) {
+    var res = 0;
+    for (var i = 1; i <= number; i++) {
+        res = res + i;
+    }
+    return res;
+}
+
+var addResult = addition(5);
+console.log(addResult);
