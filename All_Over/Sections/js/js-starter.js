@@ -207,19 +207,36 @@ console.log("You are " + age + " years old!");
 //     console.log(number);
 // }
 
-// FOR LOOP QUIZ
-// 1. Print even mumber from 132 to 148 on the console
+// // FOR LOOP QUIZ
+// // 1. Print even mumber from 132 to 148 on the console
 
-for (var i = 132; i <= 148; i++) {
-    if (i % 2 !== 0) {
-        console.log(i);
-    }
+// for (var i = 132; i <= 148; i++) {
+//     if (i % 2 !== 0) {
+//         console.log(i);
+//     }
+// }
+
+// // 2. Print numbers between 25 and 100, divisible (podzielne) by 7, to the console
+
+// for (var i = 25; i <= 100; i++) {
+//     if ((i % 7 === 0) && (i % 5 === 0)) {
+//         console.log(i);
+//     }
+// }
+
+console.log('Continue Statement');
+
+for (var i = 1; i <= 10; i++) {
+    if (i % 2 !== 0) continue;
+    console.log(i);
 }
 
-// 2. Print numbers between 25 and 100, divisible (podzielne) by 7, to the console
+console.log('Break Statement');
 
-for (var i = 25; i <= 100; i++) {
-    if ((i % 7 === 0) && (i % 5 === 0)) {
+for (var i = 1; i <= 10; i++) {
+    if (i % 2 === 0) {
         console.log(i);
+        break;
     }
+
 }
