@@ -421,14 +421,33 @@ function calculateAge(birthYear) {
 // saySentence();
 // console.log(sentence);
 
-function writeNumber() {
-    var myx = 30;
-    console.log(myx);
-}
+// function writeNumber() {
+//     var myx = 30;
+//     console.log(myx);
+// }
 
-function doSomething() {
-    console.log(myx);
-}
+// function doSomething() {
+//     console.log(myx);
+// }
 
-writeNumber();
-doSomething();
+// writeNumber();
+// doSomething();
+
+// ARRAYS
+
+var students = ['Sheldon', 'Leonard', 'Penny', 'Raj'];
+console.log(students);
+// console.log(students[0]);
+
+students[0] = 'Amy';
+console.log(students);
+
+students[4] = 'Howard';
+console.log(students);
+
+var commonData = ['John', 25, true, null];
+commonData[1];
+
+var cars = ['Mercedes', 'Audi', 'BMW', 'Volvo'];
+var cars_length = cars.length;
+console.log(cars_length);
