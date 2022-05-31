@@ -329,51 +329,106 @@ function calculateAge(birthYear) {
 
 // var Age = calculateAge(1990);
 
-// FUNCTION QUIZ
-// 1. Create a function called 'substraction', this function takes 
-// two arguments X and Y, then substracts one of these arguent from the
-// other and returns the result. Then console log the result. 
+// // FUNCTION QUIZ
+// // 1. Create a function called 'substraction', this function takes 
+// // two arguments X and Y, then substracts one of these arguent from the
+// // other and returns the result. Then console log the result. 
 
-function substraction(X, Y) {
-    return X - Y;
-}
-var arguments = substraction(10, 5);
-console.log(arguments);
-
-// 2. Declare a function called 'is Odd', this function is gonna take one
-// argument and it is gonna check if that argument is an 'odd number',
-// then it needs to return a Boolean and console that.
-
-var isOdd = function (number) {
-    if (number % 2 !== 0) {
-        return 'number is odd';
-    }
-    return 'number is even';
-}
-
-console.log(isOdd(5));
-
-
-// function isOdd(i) {
-//     if (i % 2 !== 0) {
-//         return 'is odd number';
-//     }
-//     return 'is even number'
+// function substraction(X, Y) {
+//     return X - Y;
 // }
-// var result = isOdd(3);
-// console.log(result);
+// var arguments = substraction(10, 5);
+// console.log(arguments);
 
-// 3. Declare a function called 'addition', it is gonna take one argument,
-// then it needs to sum up all numbers from 1 to that argument and return
-// the total value. Then you need to console log that total.
+// // 2. Declare a function called 'is Odd', this function is gonna take one
+// // argument and it is gonna check if that argument is an 'odd number',
+// // then it needs to return a Boolean and console that.
 
-var addition = function (number) {
-    var res = 0;
-    for (var i = 1; i <= number; i++) {
-        res = res + i;
-    }
-    return res;
+// var isOdd = function (number) {
+//     if (number % 2 !== 0) {
+//         return 'number is odd';
+//     }
+//     return 'number is even';
+// }
+
+// console.log(isOdd(5));
+
+
+// // function isOdd(i) {
+// //     if (i % 2 !== 0) {
+// //         return 'is odd number';
+// //     }
+// //     return 'is even number'
+// // }
+// // var result = isOdd(3);
+// // console.log(result);
+
+// // 3. Declare a function called 'addition', it is gonna take one argument,
+// // then it needs to sum up all numbers from 1 to that argument and return
+// // the total value. Then you need to console log that total.
+
+// var addition = function (number) {
+//     var res = 0;
+//     for (var i = 1; i <= number; i++) {
+//         res = res + i;
+//     }
+//     return res;
+// }
+
+// var addResult = addition(5);
+// console.log(addResult);
+
+// //FUNCTION SCOPE
+
+// function sayName() {
+//     var Name = 'Sheldon';
+//     console.log(Name);
+// }
+
+// var Name = 'Leonard'
+// console.log(Name);
+// sayName();
+
+// var Count = 18;
+// console.log(Count);
+
+// function writeCount() {
+//     console.log(Count);
+// }
+
+// writeCount();
+
+// function sayHi() {
+//     var myWord = 'Hello World';
+//     console.log(myWord);
+//     sayBye();
+
+//     function sayBye() {
+//         var yourWord = 'Bye';
+//         console.log(myWord);
+//     }
+// }
+
+// sayHi();
+
+// var sentence = 'Hello Wolrd!';
+
+// function saySentence() {
+//     var sentence = 'Bye bye!';
+//     console.log(sentence);
+// }
+
+// saySentence();
+// console.log(sentence);
+
+function writeNumber() {
+    var myx = 30;
+    console.log(myx);
 }
 
-var addResult = addition(5);
-console.log(addResult);
+function doSomething() {
+    console.log(myx);
+}
+
+writeNumber();
+doSomething();
