@@ -433,21 +433,42 @@ function calculateAge(birthYear) {
 // writeNumber();
 // doSomething();
 
-// ARRAYS
+// // ARRAYS
+
+// var students = ['Sheldon', 'Leonard', 'Penny', 'Raj'];
+// console.log(students);
+// // console.log(students[0]);
+
+// students[0] = 'Amy';
+// console.log(students);
+
+// students[4] = 'Howard';
+// console.log(students);
+
+// var commonData = ['John', 25, true, null];
+// commonData[1];
+
+// var cars = ['Mercedes', 'Audi', 'BMW', 'Volvo'];
+// var cars_length = cars.length;
+// console.log(cars_length);
+
+// ARRAY METHODS
 
 var students = ['Sheldon', 'Leonard', 'Penny', 'Raj'];
-console.log(students);
-// console.log(students[0]);
 
-students[0] = 'Amy';
-console.log(students);
-
-students[4] = 'Howard';
+//push method adds a new item to the end of an array
+// students.push('Bernadette');
 console.log(students);
 
-var commonData = ['John', 25, true, null];
-commonData[1];
+//pop method removes the last item from array
+var lastStudent = students.pop();
+console.log(lastStudent);
 
-var cars = ['Mercedes', 'Audi', 'BMW', 'Volvo'];
-var cars_length = cars.length;
-console.log(cars_length);
+//unshift method adds new item to the beginning of array
+var cats = ['cat1', 'cat2', 'cat3'];
+cats.unshift('cat4');
+console.log(cats);
+
+//shift method removes new item to the beginning of array
+cats.shift();
+console.log(cats);
