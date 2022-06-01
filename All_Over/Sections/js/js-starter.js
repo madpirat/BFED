@@ -589,30 +589,60 @@ function calculateAge(birthYear) {
 // var friend2 = student11.friends[1];
 // console.log(friend2);
 
-// HOW TO ADD PROPRETY TO OBJECTS
+// // HOW TO ADD PROPRETY TO OBJECTS
 
-var colors = {};
+// var colors = {};
 
-var blogPosts = [
+// var blogPosts = [
+//     {
+//         title: 'Weather',
+//         content: 'It is rainy day',
+//         comments: [
+//             {
+//                 name: 'John',
+//                 lastName: 'Travolta'
+//             },
+//             {
+//                 name: 'Frodo',
+//                 lastName: 'Baggins'
+//             }
+//         ]
+//     },
+//     {
+//         title: 'Weather',
+//         content: 'I do not like weather'
+//     }
+// ];
+
+// console.log(blogPosts[0].title);
+// console.log(blogPosts[0].comments[1].name);
+
+// OBJECT QUIZ
+
+var universities = [
     {
-        title: 'Weather',
-        content: 'It is rainy day',
-        comments: [
-            {
-                name: 'John',
-                lastName: 'Travolta'
-            },
-            {
-                name: 'Frodo',
-                lastName: 'Baggins'
-            }
-        ]
+        name: 'MIT',
+        hasGone: false,
+        year: 1890
     },
     {
-        title: 'Weather',
-        content: 'I do not like weather'
+        name: 'Harvard',
+        hasGone: true,
+        year: 1900
+    },
+    {
+        name: 'Oxford',
+        hasGone: true,
+        year: 1800
     }
 ];
 
-console.log(blogPosts[0].title);
-console.log(blogPosts[0].comments[1].name);
+universities.forEach(function (university) {
+    if (university.hasGone === true) {
+        console.log(university.name + ' was founded in ' + university.year);
+    } else {
+        console.log(university.name);
+    }
+}
+
+);
