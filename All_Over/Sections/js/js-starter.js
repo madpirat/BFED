@@ -507,13 +507,29 @@ function calculateAge(birthYear) {
 
 // console.log(films[2][2]);
 
-// ARRAY ITERATION
+// // ARRAY ITERATION
 
-var books = ['Harry Potter', 'Hobbit', 'Hunger Games', 'Little Prince'];
-// for (var i = 0; i < books.length; i++) {
-//     console.log(books[i]);
-// }
+// var books = ['Harry Potter', 'Hobbit', 'Hunger Games', 'Little Prince'];
+// // for (var i = 0; i < books.length; i++) {
+// //     console.log(books[i]);
+// // }
 
-books.forEach(function (book) {
-    console.log(book);
-})
+// books.forEach(function (book) {
+//     console.log(book);
+// })
+
+// ARRAY ITERATION QUIZ
+
+var numbers = []
+
+for (var i = 0; i <= 20; i++) {
+    numbers.push(i);
+}
+
+console.log(numbers);
+
+numbers.forEach(function (number) {
+    if (number % 5 === 0) {
+        console.log(number);
+    }
+});
