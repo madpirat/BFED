@@ -558,33 +558,61 @@ function calculateAge(birthYear) {
 
 // console.log(student[schoolName]);
 
-// OBJECT UPDATE
+// // OBJECT UPDATE
 
-var Leonard = {
-    name: 'Leonard',
-    school: 'calTech',
-    age: 35
-};
+// var Leonard = {
+//     name: 'Leonard',
+//     school: 'calTech',
+//     age: 35
+// };
 
-Leonard.age += 1;
+// Leonard.age += 1;
 
-console.log(Leonard.age);
+// console.log(Leonard.age);
 
-Leonard['school'] = 'MIT';
-console.log(Leonard['school']);
+// Leonard['school'] = 'MIT';
+// console.log(Leonard['school']);
 
-var student11 = {
-    name: 'Amy',
-    age: 25,
-    friends: ['Howard', 'Bernadette', 'Raj'],
-    bestFriend: {
-        firstName: 'Penny',
-        birthYear: 1988
+// var student11 = {
+//     name: 'Amy',
+//     age: 25,
+//     friends: ['Howard', 'Bernadette', 'Raj'],
+//     bestFriend: {
+//         firstName: 'Penny',
+//         birthYear: 1988
+//     }
+// };
+
+// var bestFriendOfStudent11 = student11.bestFriend.firstName;
+// console.log(bestFriendOfStudent11);
+
+// var friend2 = student11.friends[1];
+// console.log(friend2);
+
+// HOW TO ADD PROPRETY TO OBJECTS
+
+var colors = {};
+
+var blogPosts = [
+    {
+        title: 'Weather',
+        content: 'It is rainy day',
+        comments: [
+            {
+                name: 'John',
+                lastName: 'Travolta'
+            },
+            {
+                name: 'Frodo',
+                lastName: 'Baggins'
+            }
+        ]
+    },
+    {
+        title: 'Weather',
+        content: 'I do not like weather'
     }
-};
+];
 
-var bestFriendOfStudent11 = student11.bestFriend.firstName;
-console.log(bestFriendOfStudent11);
-
-var friend2 = student11.friends[1];
-console.log(friend2);
+console.log(blogPosts[0].title);
+console.log(blogPosts[0].comments[1].name);
