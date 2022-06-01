@@ -534,29 +534,57 @@ function calculateAge(birthYear) {
 //     }
 // });
 
-// OBJECTS
+// // OBJECTS
 
-// var student1 = ['Sheldon', 36, 'calTech'];
-// var student2 = [35, 'MIT', 'Leonard'];
+// // var student1 = ['Sheldon', 36, 'calTech'];
+// // var student2 = [35, 'MIT', 'Leonard'];
 
-// student1[2];
-// student2[1];
+// // student1[2];
+// // student2[1];
 
-// var student = new Object ();
-// student.school
+// // var student = new Object ();
+// // student.school
 
-var schoolName = 'school';
+// var schoolName = 'school';
 
-var student = {
-    name: 'Sheldon',
-    age: 36,
-    school: 'calTech'
+// var student = {
+//     name: 'Sheldon',
+//     age: 36,
+//     school: 'calTech'
+// };
+
+// console.log(student['name']);
+// console.log(student.school);
+
+// console.log(student[schoolName]);
+
+// OBJECT UPDATE
+
+var Leonard = {
+    name: 'Leonard',
+    school: 'calTech',
+    age: 35
 };
 
-console.log(student['name']);
-console.log(student.school);
+Leonard.age += 1;
 
-console.log(student[schoolName]);
+console.log(Leonard.age);
 
+Leonard['school'] = 'MIT';
+console.log(Leonard['school']);
 
+var student11 = {
+    name: 'Amy',
+    age: 25,
+    friends: ['Howard', 'Bernadette', 'Raj'],
+    bestFriend: {
+        firstName: 'Penny',
+        birthYear: 1988
+    }
+};
 
+var bestFriendOfStudent11 = student11.bestFriend.firstName;
+console.log(bestFriendOfStudent11);
+
+var friend2 = student11.friends[1];
+console.log(friend2);
