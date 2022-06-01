@@ -488,23 +488,32 @@ function calculateAge(birthYear) {
 // ARRAY QUIZ 
 // 01. Access the last element of books array
 
+// var books = ['Harry Potter', 'Hobbit', 'Hunger Games', 'Little Prince'];
+// // solution from tutorial
+// console.log(books[books.length - 1]);
+
+// // my solutions - a little bit longer, definitely not DRY (do not repeat yourself)
+// // var books_length = books.length;
+// // console.log(books_length);
+// // console.log(books[3]);
+
+// // 02. Print the godFather3 film from the films array to the console
+
+// var films = [
+//     ['hobbit1', 'hobbit2', 'hobbit3'],
+//     ['matrix1', 'matrix2', 'matrix3'],
+//     ['godFather1', 'godFather2', 'godFather3'],
+// ]
+
+// console.log(films[2][2]);
+
+// ARRAY ITERATION
+
 var books = ['Harry Potter', 'Hobbit', 'Hunger Games', 'Little Prince'];
-// solution from tutorial
-console.log(books[books.length - 1]);
+// for (var i = 0; i < books.length; i++) {
+//     console.log(books[i]);
+// }
 
-
-// my solutions - a little bit longer, definitely not DRY (do not repeat yourself)
-// var books_length = books.length;
-// console.log(books_length);
-// console.log(books[3]);
-
-// 02. Print the godFather3 film from the films array to the console
-
-var films = [
-    ['hobbit1', 'hobbit2', 'hobbit3'],
-    ['matrix1', 'matrix2', 'matrix3'],
-    ['godFather1', 'godFather2', 'godFather3'],
-]
-
-console.log(films[2][2]);
-
+books.forEach(function (book) {
+    console.log(book);
+})
