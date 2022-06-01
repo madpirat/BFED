@@ -477,10 +477,34 @@ function calculateAge(birthYear) {
 // console.log(students.indexOf('Sheldon'));
 // console.log(students.indexOf('Leonard'));
 
-//slice
-var friends = ['Ross', 'Rachel', 'Joey', 'Chandler'];
-var closeFriends = friends.slice(1, 3);
-var realCloseFriends = friends.slice();
-console.log(friends);
-console.log(closeFriends);
-console.log(realCloseFriends);
+// //slice
+// var friends = ['Ross', 'Rachel', 'Joey', 'Chandler'];
+// var closeFriends = friends.slice(1, 3);
+// var realCloseFriends = friends.slice();
+// console.log(friends);
+// console.log(closeFriends);
+// console.log(realCloseFriends);
+
+// ARRAY QUIZ 
+// 01. Access the last element of books array
+
+var books = ['Harry Potter', 'Hobbit', 'Hunger Games', 'Little Prince'];
+// solution from tutorial
+console.log(books[books.length - 1]);
+
+
+// my solutions - a little bit longer, definitely not DRY (do not repeat yourself)
+// var books_length = books.length;
+// console.log(books_length);
+// console.log(books[3]);
+
+// 02. Print the godFather3 film from the films array to the console
+
+var films = [
+    ['hobbit1', 'hobbit2', 'hobbit3'],
+    ['matrix1', 'matrix2', 'matrix3'],
+    ['godFather1', 'godFather2', 'godFather3'],
+]
+
+console.log(films[2][2]);
+
