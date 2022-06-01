@@ -518,18 +518,45 @@ function calculateAge(birthYear) {
 //     console.log(book);
 // })
 
-// ARRAY ITERATION QUIZ
+// // ARRAY ITERATION QUIZ
 
-var numbers = []
+// var numbers = []
 
-for (var i = 0; i <= 20; i++) {
-    numbers.push(i);
-}
+// for (var i = 0; i <= 20; i++) {
+//     numbers.push(i);
+// }
 
-console.log(numbers);
+// console.log(numbers);
 
-numbers.forEach(function (number) {
-    if (number % 5 === 0) {
-        console.log(number);
-    }
-});
+// numbers.forEach(function (number) {
+//     if (number % 5 === 0) {
+//         console.log(number);
+//     }
+// });
+
+// OBJECTS
+
+// var student1 = ['Sheldon', 36, 'calTech'];
+// var student2 = [35, 'MIT', 'Leonard'];
+
+// student1[2];
+// student2[1];
+
+// var student = new Object ();
+// student.school
+
+var schoolName = 'school';
+
+var student = {
+    name: 'Sheldon',
+    age: 36,
+    school: 'calTech'
+};
+
+console.log(student['name']);
+console.log(student.school);
+
+console.log(student[schoolName]);
+
+
+
