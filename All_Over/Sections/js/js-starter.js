@@ -454,21 +454,33 @@ function calculateAge(birthYear) {
 
 // ARRAY METHODS
 
-var students = ['Sheldon', 'Leonard', 'Penny', 'Raj'];
+// var students = ['Sheldon', 'Leonard', 'Penny', 'Raj'];
 
-//push method adds a new item to the end of an array
-// students.push('Bernadette');
-console.log(students);
+// //push method adds a new item to the end of an array
+// // students.push('Bernadette');
+// console.log(students);
 
-//pop method removes the last item from array
-var lastStudent = students.pop();
-console.log(lastStudent);
+// //pop method removes the last item from array
+// var lastStudent = students.pop();
+// console.log(lastStudent);
 
-//unshift method adds new item to the beginning of array
-var cats = ['cat1', 'cat2', 'cat3'];
-cats.unshift('cat4');
-console.log(cats);
+// //unshift method adds new item to the beginning of array
+// var cats = ['cat1', 'cat2', 'cat3'];
+// cats.unshift('cat4');
+// console.log(cats);
 
-//shift method removes new item to the beginning of array
-cats.shift();
-console.log(cats);
+// //shift method removes new item to the beginning of array
+// cats.shift();
+// console.log(cats);
+
+// //indexOf
+// console.log(students.indexOf('Sheldon'));
+// console.log(students.indexOf('Leonard'));
+
+//slice
+var friends = ['Ross', 'Rachel', 'Joey', 'Chandler'];
+var closeFriends = friends.slice(1, 3);
+var realCloseFriends = friends.slice();
+console.log(friends);
+console.log(closeFriends);
+console.log(realCloseFriends);
