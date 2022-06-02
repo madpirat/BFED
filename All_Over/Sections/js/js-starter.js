@@ -647,25 +647,38 @@ function calculateAge(birthYear) {
 
 // );
 
-// OBJECT METHODS
+// // OBJECT METHODS
 
-var Sheldon = {
-    name: 'Sheldon',
-    age: 35,
-    hasGone: true,
-    friends: ['Penny', 'Raj'],
-    say: function () {
-        console.log('say hi Sheldon');
+// var Sheldon = {
+//     name: 'Sheldon',
+//     age: 35,
+//     hasGone: true,
+//     friends: ['Penny', 'Raj'],
+//     say: function () {
+//         console.log('say hi Sheldon');
+//     }
+// }
+
+// Sheldon.say();
+
+// var Leonard = {
+//     name: 'Leonard',
+//     say: function () {
+//         console.log('say hi Leonard');
+//     }
+// }
+
+// Leonard.say();
+
+// 'THIS' KEYWORD
+
+var Raj = {
+    name: 'Raj',
+    year: 1989,
+    sayHi: function () {
+        console.log(this);
+        console.log('say hi ' + this.name);
     }
 }
 
-Sheldon.say();
-
-var Leonard = {
-    name: 'Leonard',
-    say: function () {
-        console.log('say hi Leonard');
-    }
-}
-
-Leonard.say();
+Raj.sayHi();
