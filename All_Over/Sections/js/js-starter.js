@@ -617,32 +617,55 @@ function calculateAge(birthYear) {
 // console.log(blogPosts[0].title);
 // console.log(blogPosts[0].comments[1].name);
 
-// OBJECT QUIZ
+// // OBJECT QUIZ
 
-var universities = [
-    {
-        name: 'MIT',
-        hasGone: false,
-        year: 1890
-    },
-    {
-        name: 'Harvard',
-        hasGone: true,
-        year: 1900
-    },
-    {
-        name: 'Oxford',
-        hasGone: true,
-        year: 1800
-    }
-];
+// var universities = [
+//     {
+//         name: 'MIT',
+//         hasGone: false,
+//         year: 1890
+//     },
+//     {
+//         name: 'Harvard',
+//         hasGone: true,
+//         year: 1900
+//     },
+//     {
+//         name: 'Oxford',
+//         hasGone: true,
+//         year: 1800
+//     }
+// ];
 
-universities.forEach(function (university) {
-    if (university.hasGone === true) {
-        console.log(university.name + ' was founded in ' + university.year);
-    } else {
-        console.log(university.name);
+// universities.forEach(function (university) {
+//     if (university.hasGone === true) {
+//         console.log(university.name + ' was founded in ' + university.year);
+//     } else {
+//         console.log(university.name);
+//     }
+// }
+
+// );
+
+// OBJECT METHODS
+
+var Sheldon = {
+    name: 'Sheldon',
+    age: 35,
+    hasGone: true,
+    friends: ['Penny', 'Raj'],
+    say: function () {
+        console.log('say hi Sheldon');
     }
 }
 
-);
+Sheldon.say();
+
+var Leonard = {
+    name: 'Leonard',
+    say: function () {
+        console.log('say hi Leonard');
+    }
+}
+
+Leonard.say();
