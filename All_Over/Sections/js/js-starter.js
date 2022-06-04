@@ -670,15 +670,33 @@ function calculateAge(birthYear) {
 
 // Leonard.say();
 
-// 'THIS' KEYWORD
+// // 'THIS' KEYWORD
 
-var Raj = {
-    name: 'Raj',
-    year: 1989,
-    sayHi: function () {
-        console.log(this);
-        console.log('say hi ' + this.name);
+// var Raj = {
+//     name: 'Raj',
+//     year: 1989,
+//     sayHi: function () {
+//         console.log(this);
+//         console.log('say hi ' + this.name);
+//     }
+// }
+
+// Raj.sayHi();
+
+// DOM - Document Object Model Practice
+
+var h1Element = document.querySelector('h1');
+
+h1Element.style.color = 'blue';
+
+var isYellow = false;
+var bodyElement = document.querySelector('body');
+
+setInterval(function () {
+    if (isYellow) {
+        bodyElement.style.background = 'white';
+    } else {
+        bodyElement.style.background = 'yellow';
     }
-}
-
-Raj.sayHi();
+    isYellow = !isYellow;
+}, 1000)
