@@ -683,20 +683,21 @@ function calculateAge(birthYear) {
 
 // Raj.sayHi();
 
-// DOM - Document Object Model Practice
+// // DOM - Document Object Model Practice
 
-var h1Element = document.querySelector('h1');
+// var h1Element = document.querySelector('h1');
 
-h1Element.style.color = 'blue';
+// h1Element.style.color = 'blue';
 
-var isYellow = false;
-var bodyElement = document.querySelector('body');
+// var isYellow = false;
+// var bodyElement = document.querySelector('body');
 
-setInterval(function () {
-    if (isYellow) {
-        bodyElement.style.background = 'white';
-    } else {
-        bodyElement.style.background = 'yellow';
-    }
-    isYellow = !isYellow;
-}, 1000)
+// setInterval(function () {
+//     if (isYellow) {
+//         bodyElement.style.background = 'white';
+//     } else {
+//         bodyElement.style.background = 'yellow';
+//     }
+//     isYellow = !isYellow;
+// }, 1000)
+
