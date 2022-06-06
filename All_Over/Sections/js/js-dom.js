@@ -44,14 +44,24 @@
 
 // paragraph.innerHTML = 'Oak academy is <strong>great</strong>';
 
-// MANIPULATION METHODS - DOM - ATTRIBUTE
+// // MANIPULATION METHODS - DOM - ATTRIBUTE
 
-var myLink = document.querySelector('a');
+// var myLink = document.querySelector('a');
 
-console.log(myLink.getAttribute('href'));
+// console.log(myLink.getAttribute('href'));
 
 
-myLink.setAttribute('href', 'http://facebook.com')
-console.log(myLink.getAttribute('href'));
+// myLink.setAttribute('href', 'http://facebook.com')
+// console.log(myLink.getAttribute('href'));
 
-myLink.textContent = 'Go To FaceBook Now!'
+// myLink.textContent = 'Go To FaceBook Now!'
+
+// EVENT HANDLERS
+
+var button = document.querySelector('#btn1');
+var title = document.querySelector('#OAKTitle');
+
+button.addEventListener('click', function () {
+    console.log('You clicked the button');
+    title.style.backgroundColor = 'red';
+});
