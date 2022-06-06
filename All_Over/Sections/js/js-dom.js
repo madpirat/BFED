@@ -1,22 +1,22 @@
-// SELECTION METHODS - DOM
+// // SELECTION METHODS - DOM
 
-var selectWithId = document.getElementById('oakParagraph');
-console.log(selectWithId);
+// var selectWithId = document.getElementById('oakParagraph');
+// console.log(selectWithId);
 
-var selectWithClass = document.getElementsByClassName('background');
-console.log(selectWithClass);
+// var selectWithClass = document.getElementsByClassName('background');
+// console.log(selectWithClass);
 
-var selectWithTag = document.getElementsByTagName('h1');
-console.log(selectWithTag);
+// var selectWithTag = document.getElementsByTagName('h1');
+// console.log(selectWithTag);
 
-var selectWithQueryId = document.querySelector('#oakParagraph');
-console.log(selectWithQueryId);
+// var selectWithQueryId = document.querySelector('#oakParagraph');
+// console.log(selectWithQueryId);
 
-var selectWithQueryClass = document.querySelector('.background');
-console.log(selectWithQueryClass);
+// var selectWithQueryClass = document.querySelector('.background');
+// console.log(selectWithQueryClass);
 
-var selectWithQueryAllClass = document.querySelectorAll('.background');
-console.log(selectWithQueryAllClass);
+// var selectWithQueryAllClass = document.querySelectorAll('.background');
+// console.log(selectWithQueryAllClass);
 
 // // MANIPULATION METHODS - DOM
 
@@ -35,11 +35,23 @@ console.log(selectWithQueryAllClass);
 // divToManipulate.classList.toggle('addClass');
 // divToManipulate.classList.toggle('addClass');
 
-// MANIPULATION METHODS PART 2 - DOM
+// // MANIPULATION METHODS PART 2 - DOM
 
-var paragraph = document.querySelector('#oakParagraph');
+// var paragraph = document.querySelector('#oakParagraph');
 
-// console.log(paragraph.textContent);
-// paragraph.textContent = 'Oak academy is the best, really!';
+// // console.log(paragraph.textContent);
+// // paragraph.textContent = 'Oak academy is the best, really!';
 
-paragraph.innerHTML = 'Oak academy is <strong>great</strong>';
+// paragraph.innerHTML = 'Oak academy is <strong>great</strong>';
+
+// MANIPULATION METHODS - DOM - ATTRIBUTE
+
+var myLink = document.querySelector('a');
+
+console.log(myLink.getAttribute('href'));
+
+
+myLink.setAttribute('href', 'http://facebook.com')
+console.log(myLink.getAttribute('href'));
+
+myLink.textContent = 'Go To FaceBook Now!'
