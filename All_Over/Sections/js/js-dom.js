@@ -105,36 +105,36 @@ button.addEventListener('click', function () {
 
 // oakParagraph.addEventListener('click', toggleBackground);
 
-// TO-DO List Quiz - Solution
+// // TO-DO List Quiz - Solution
 
-// var firstTodoItem = document.querySelector('.todoItem');
-// firstTodoItem.addEventListener('mouseover', function () {
-//     firstTodoItem.style.backgroundColor = 'blue';
-//     firstTodoItem.style.color = 'white';
-// })
+// // var firstTodoItem = document.querySelector('.todoItem');
+// // firstTodoItem.addEventListener('mouseover', function () {
+// //     firstTodoItem.style.backgroundColor = 'blue';
+// //     firstTodoItem.style.color = 'white';
+// // })
 
-// firstTodoItem.addEventListener('mouseout', function() {
-//     firstTodoItem.style.backgroundColor = 'white';
-//     firstTodoItem.style.color = 'black';
-// })
+// // firstTodoItem.addEventListener('mouseout', function() {
+// //     firstTodoItem.style.backgroundColor = 'white';
+// //     firstTodoItem.style.color = 'black';
+// // })
 
-var todoListItems = document.querySelectorAll('.todoItem');
+// var todoListItems = document.querySelectorAll('.todoItem');
 
-for (var i = 0; i < todoListItems.length; i++) {
-    todoListItems[i].addEventListener('mouseover', function () {
-        this.style.backgroundColor = 'blue'
-        this.style.color = 'white'
-    })
+// for (var i = 0; i < todoListItems.length; i++) {
+//     todoListItems[i].addEventListener('mouseover', function () {
+//         this.style.backgroundColor = 'blue'
+//         this.style.color = 'white'
+//     })
 
-    todoListItems[i].addEventListener('mouseout', function () {
-        this.style.backgroundColor = 'white'
-        this.style.color = 'black'
-    })
+//     todoListItems[i].addEventListener('mouseout', function () {
+//         this.style.backgroundColor = 'white'
+//         this.style.color = 'black'
+//     })
 
-    todoListItems[i].addEventListener('click', function () {
-        this.classList.add('okay');
-    })
-}
+//     todoListItems[i].addEventListener('click', function () {
+//         this.classList.add('okay');
+//     })
+// }
 
 
 
