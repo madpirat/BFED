@@ -77,24 +77,33 @@ button.addEventListener('click', function () {
 // });
 
 
+// // PROPER SOLUTION 
 
-// PROPER SOLUTION 
+// var listParent = document.querySelector('ul');
+// var listItems = document.querySelectorAll('li');
+// console.log('listItems', listItems);
 
-var listParent = document.querySelector('ul');
-var listItems = document.querySelectorAll('li');
-console.log('listItems', listItems);
+// listParent.addEventListener('click', function () {
+//     console.log('You clicked the UL');
+//     listParent.style.backgroundColor = 'blue';
+// });
 
-listParent.addEventListener('click', function () {
-    console.log('You clicked the UL');
-    listParent.style.backgroundColor = 'blue';
-});
+// for (var i = 0; i < listItems.length; i++) {
+//     listItems[i].addEventListener('click', function () {
+//         this.style.color = 'white';
+//     })
+// }
 
-for (var i = 0; i < listItems.length; i++) {
-    listItems[i].addEventListener('click', function () {
-        this.style.color = 'white';
-    })
+
+// CALLBACK FUNCTION
+
+var oakParagraph = document.querySelector('#oakParagraph');
+
+function toggleBackground() {
+    oakParagraph.classList.toggle('toggleBackground');
 }
 
+oakParagraph.addEventListener('click', toggleBackground);
 
 
 
