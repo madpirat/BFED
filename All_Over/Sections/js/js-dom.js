@@ -65,3 +65,41 @@ button.addEventListener('click', function () {
     console.log('You clicked the button');
     title.style.backgroundColor = 'red';
 });
+
+// var listParent = document.querySelector('ul');
+
+// // My Solution
+// var liColorChange = document.querySelectorAll('li');
+// liColorChange.setAttribute('li', '#colorChange');
+
+// liColorChange.addEventListener('click', function () {
+//     liColorChange.style.backgroundColor = 'white';
+// });
+
+
+
+// PROPER SOLUTION 
+
+var listParent = document.querySelector('ul');
+var listItems = document.querySelectorAll('li');
+console.log('listItems', listItems);
+
+listParent.addEventListener('click', function () {
+    console.log('You clicked the UL');
+    listParent.style.backgroundColor = 'blue';
+});
+
+for (var i = 0; i < listItems.length; i++) {
+    listItems[i].addEventListener('click', function () {
+        this.style.color = 'white';
+    })
+}
+
+
+
+
+
+
+
+
+
