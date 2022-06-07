@@ -81,18 +81,40 @@
 // Juventus.emit('nation', 'Italian');
 // Galatasaray.emit('nation', 'Turkish');
 
-// NODE JS - READING & WRITING FILES
+// // NODE JS - READING & WRITING FILES
 
 const fs = require('fs');
 
-fs.readFile('read-me.txt', 'utf-8', function (error, data) {
-    fs.writeFile('write.txt', data, function (error) {
-        if (error) {
-            console.log(error);
-        }
+// fs.readFile('read-me.txt', 'utf-8', function (error, data) {
+//     fs.writeFile('write.txt', data, function (error) {
+//         if (error) {
+//             console.log(error);
+//         }
+//     })
+// });
+
+// // console.log(text);
+
+// // fs.writeFileSync('write.txt', text); 
+
+// NODE JS - CREATING & REMOVING DIRECTORIES
+
+// fs.unlink('write.txt', (error) => {
+//     console.log(error);
+// })
+
+// fs.mkdir('my-folder', () => {
+//     fs.readFile('read-me.txt', 'utf-8', (error, data) => {
+//         fs.writeFile('./my-folder/write-me.txt', data, () => {
+
+//         })
+//     })
+// });
+
+fs.unlink('./my-folder/write-me.txt', () => {
+    fs.rmdir('my-folder', (error) => {
+        console.log(error);
     })
-});
+})
 
-// console.log(text);
 
-// fs.writeFileSync('write.txt', text);
