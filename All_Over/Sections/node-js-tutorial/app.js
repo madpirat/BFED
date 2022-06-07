@@ -16,3 +16,20 @@
 
 // console.log(__filename);
 
+// NODE JS - FUNCTION
+
+// function orange() {
+//     console.log('hello world');
+// }
+
+// orange();
+
+function callbackFunc(func) {
+    func();
+}
+
+let red = function () {
+    console.log('hi there');
+}
+
+callbackFunc(red);
