@@ -1,3 +1,5 @@
+// NODE JS - GLOBALS
+
 // console.log('hello world!');
 
 // let count = 0;
@@ -12,4 +14,5 @@
 
 // console.log(__dirname);
 
-console.log(__filename);
+// console.log(__filename);
+
