@@ -16,7 +16,7 @@
 
 // console.log(__filename);
 
-// NODE JS - FUNCTION
+//// NODE JS - FUNCTION
 
 // function orange() {
 //     console.log('hello world');
@@ -24,12 +24,18 @@
 
 // orange();
 
-function callbackFunc(func) {
-    func();
-}
+// function callbackFunc(func) {
+//     func();
+// }
 
-let red = function () {
-    console.log('hi there');
-}
+// let red = function () {
+//     console.log('hi there');
+// }
 
-callbackFunc(red);
+// callbackFunc(red);
+
+// NODE JS - Module and Require
+
+const helper = require('./helper');
+
+console.log(helper('Alex'));
