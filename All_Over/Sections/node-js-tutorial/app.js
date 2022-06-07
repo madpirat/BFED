@@ -38,4 +38,6 @@
 
 const helper = require('./helper');
 
-console.log(helper('Alex'));
+console.log(helper.user('Alex'));
+console.log(helper.id('1234'));
+console.log(helper.email('alex@mail.com'));
