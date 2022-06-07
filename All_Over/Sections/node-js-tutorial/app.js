@@ -97,24 +97,33 @@ const fs = require('fs');
 
 // // fs.writeFileSync('write.txt', text); 
 
-// NODE JS - CREATING & REMOVING DIRECTORIES
+// // NODE JS - CREATING & REMOVING DIRECTORIES
 
-// fs.unlink('write.txt', (error) => {
-//     console.log(error);
+// // fs.unlink('write.txt', (error) => {
+// //     console.log(error);
+// // })
+
+// // fs.mkdir('my-folder', () => {
+// //     fs.readFile('read-me.txt', 'utf-8', (error, data) => {
+// //         fs.writeFile('./my-folder/write-me.txt', data, () => {
+
+// //         })
+// //     })
+// // });
+
+// fs.unlink('./my-folder/write-me.txt', () => {
+//     fs.rmdir('my-folder', (error) => {
+//         console.log(error);
+//     })
 // })
 
-// fs.mkdir('my-folder', () => {
-//     fs.readFile('read-me.txt', 'utf-8', (error, data) => {
-//         fs.writeFile('./my-folder/write-me.txt', data, () => {
+// NODE JS - CLIENTS & SERVERS
+const http = require('http');
+const server = http.createServer((req, res) => {
+    console.log(req.url);
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('hello world');
+});
 
-//         })
-//     })
-// });
-
-fs.unlink('./my-folder/write-me.txt', () => {
-    fs.rmdir('my-folder', (error) => {
-        console.log(error);
-    })
-})
-
-
+console.log('port 3000');
+server.listen(3000, '127.0.0.1');
