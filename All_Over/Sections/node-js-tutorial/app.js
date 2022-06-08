@@ -83,7 +83,7 @@
 
 // // NODE JS - READING & WRITING FILES
 
-const fs = require('fs');
+// const fs = require('fs');
 
 // fs.readFile('read-me.txt', 'utf-8', function (error, data) {
 //     fs.writeFile('write.txt', data, function (error) {
@@ -117,13 +117,28 @@ const fs = require('fs');
 //     })
 // })
 
-// NODE JS - CLIENTS & SERVERS
+// // NODE JS - CLIENTS & SERVERS
+// const http = require('http');
+// const server = http.createServer((req, res) => {
+//     console.log(req.url);
+//     res.writeHead(200, { 'Content-Type': 'text/plain' });
+//     res.end('hello world');
+// });
+
+// console.log('port 3000');
+// server.listen(3000, '127.0.0.1');
+
+// NODE JS - STEAMS & BUFFERS
+
 const http = require('http');
-const server = http.createServer((req, res) => {
-    console.log(req.url);
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('hello world');
+const fs = require('fs');
+
+const readStream = fs.createReadStream(__dirname + '/read-me.txt', 'utf-8');
+const writeStream = fs.createWriteStream(__dirname + '/write-me.txt');
+
+readStream.on('data', (chunk) => {
+    console.log('new data received');
+    console.log(chunk);
+    writeStream.write(chunk);
 });
 
-console.log('port 3000');
-server.listen(3000, '127.0.0.1');

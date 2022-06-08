@@ -22,4 +22,3 @@ module.exports = {
 // module.exports.user = user;
 // module.exports.id = id;
 // module.exports.email = email;
-
