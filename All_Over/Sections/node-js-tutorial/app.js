@@ -128,17 +128,31 @@
 // console.log('port 3000');
 // server.listen(3000, '127.0.0.1');
 
-// NODE JS - STEAMS & BUFFERS
+// NODE JS - STREAMS & BUFFERS
+
+// const http = require('http');
+// const fs = require('fs');
+
+// const readStream = fs.createReadStream(__dirname + '/read-me.txt', 'utf-8');
+// const writeStream = fs.createWriteStream(__dirname + '/write-me.txt');
+
+// readStream.on('data', (chunk) => {
+//     console.log('new data received');
+//     console.log(chunk);
+//     writeStream.write(chunk);
+// });
+
+// // NODE JS - PIPE
+// readStream.pipe(writeStream);
 
 const http = require('http');
 const fs = require('fs');
 
-const readStream = fs.createReadStream(__dirname + '/read-me.txt', 'utf-8');
-const writeStream = fs.createWriteStream(__dirname + '/write-me.txt');
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    const readStream = fs.createReadStream(__dirname + '/read-me.txt', 'utf-8');
 
-readStream.on('data', (chunk) => {
-    console.log('new data received');
-    console.log(chunk);
-    writeStream.write(chunk);
+    readStream.pipe(res);
 });
 
+server.listen(3000, '127.0.0.1');
