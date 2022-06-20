@@ -80,7 +80,8 @@ hr {
 }
 
 .photo-id {
-  border-radius: 50%;
+  border-radius: 100%;
+  filter: blur(2px);
   width: 15%;
 }
 
