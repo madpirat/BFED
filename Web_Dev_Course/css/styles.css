@@ -59,6 +59,7 @@ hr {
 
 .bottom-container {
   background-color: #66bfbf;
+  font-family: "Montserrat", sans-serif;
   padding: 50px 0 20px;
 }
 
@@ -66,6 +67,10 @@ hr {
   position: absolute;
   right: 300px;
   top: 40px;
+}
+
+.mountain-img {
+  width: auto;
 }
 
 .bottom-cloud {
