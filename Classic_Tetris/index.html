@@ -6,10 +6,38 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=">
         <title>Classic Tetris Project</title>
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Press+Start+2P&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+
     </head>
 
     <body>
+        <div class="grid">
+            <canvas id="board" class="game-board"></canvas>
+            <div class="right-column">
+                <div>
+                    <h1>TETRIS</h1>
+                    <p>Score: <span id="score">0</span></p>
+                    <p>Lines: <span id="lines">0</span></p>
+                    <p>Level: <span id="level">0</span></p>
+                    <canvas id="next" class="next"></canvas>
+                </div>
+                <button onclick="play()" class="play-button">Play</button>
+            </div>
+        </div>
+        <footer class="copyright">
+            <a href="https://www.flaticon.com/free-icons/tetris" title="tetris icons">Tetris icons created by cah
+                nggunung - Flaticon</a>
+        </footer>
 
+
+
+        <script type="text/javascript" src="./js/constants.js"></script>
+        <script type="text/javascript" src="./js/board.js"></script>
+        <script type="text/javascript" src="./js/piece.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
     </body>
 
 </html>
