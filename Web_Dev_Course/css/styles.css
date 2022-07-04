@@ -101,6 +101,14 @@ hr {
   padding: 20px 0;
 }
 
+.copyright-inline {
+  color: #11999e;
+  margin: 0px 0px;
+  font-weight: bold;
+  /* font-size: 0.75rem;
+  padding: 20px 0; */
+}
+
 .skill-row {
   width: 50%;
   margin: 100px auto 100px auto;
