@@ -2,8 +2,12 @@ body {
   background-color: #202028;
   color: #c1d3d0;
   font-family: "Press Start 2P", cursive;
-  font-size: 2em;
+  font-size: 1.2em;
   text-align: center;
+}
+
+.p-info {
+  font-size: 0.75rem;
 }
 
 .bottom-container {
