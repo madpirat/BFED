@@ -7,11 +7,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Classic Tetris</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Press+Start+2P&display=swap"
+            rel="stylesheet">
     </head>
 
     <body>
+        <div>
+            <p>Classic Tetris</p>
+            <p>Score: <span id="score"></span></p>
+        </div>
+
 
         <canvas id="tetris" width="240" height="400"></canvas>
+
+        <div class="bottom-container">
+            <a class="footer-link" href="https://www.linkedin.com/in/mchrabaszcz/"><img class="footer-img"
+                    src="https://cdn-icons-png.flaticon.com/512/733/733617.png" alt="LinkedIn-Logo"></a>
+            <a class=" footer-link" href="https://github.com/madpirat"><img class="footer-img"
+                    src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub-Logo"></a>
+            <a class="footer-link" href="#"><img class="footer-img" src="./Web_Dev_Course/img/www.png"
+                    alt="WebPage-Logo"></a>
+            <p class="copyright">© Marcin C. @ MC FM<br>
+                <a class="copyright" href="https://www.flaticon.com/free-icons/linkedin" title="icons">Icons created by
+                    Pixel perfect/zafdesign - Flaticon.</a>
+
+            <p class="copyright">Tetris© Game created following<br>
+                <a class="copyright" href="https://github.com/meth-meth-method/tetris"
+                    title="icons">Meth-Meth-Method</a> tutorial.
+            </p>
+
+
+        </div>
+
         <script src="./js/tetris.js"></script>
 
     </body>
