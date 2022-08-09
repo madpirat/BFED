@@ -2,15 +2,6 @@ body {
   font-family: "Montserrat";
 }
 
-#title {
-  background: #ff4c68;
-  color: #fff;
-}
-
-.container-fluid {
-  padding: 3% 15%;
-}
-
 h1,
 h2,
 h3,
@@ -31,12 +22,29 @@ h2 {
 }
 
 h3 {
-  font-family: "Montserrat";
   font-weight: 700;
 }
 
 p {
   color: #8f8f8f;
+}
+
+/* Styling CSS  */
+.container-text,
+.features-text,
+.carousel-text,
+.cta-text,
+.footer-text {
+  padding: 7% 15%;
+}
+
+#title {
+  background: #ff4c68;
+  color: #fff;
+}
+
+.container-fluid {
+  /* padding: 3% 15%; */
 }
 
 /* Heading Section */
@@ -79,9 +87,8 @@ p {
 }
 
 /* Features Section */
-
 #features {
-  padding: 7% 15%;
+  /* padding: 7% 15%; */
   background-color: #fff;
   position: relative;
 }
@@ -114,7 +121,7 @@ p {
 }
 
 .carousel-item {
-  padding: 7% 15%;
+  /* padding: 7% 15%; */
 }
 
 /* Press Section */
@@ -140,25 +147,30 @@ p {
   padding: 3% 2%;
 }
 
+.price-text {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+
 /* CTA Section */
 #cta {
   background-color: #ff4c68;
   color: #fff;
   text-align: center;
-  padding: 7% 15%;
+  /* padding: 7% 15%; */
 }
 
-.cta-heading {
+/* .cta-heading {
   font-family: "Montserrat";
   font-size: 3.5rem;
   line-height: 1.5;
   font-weight: 900;
-}
+} */
 
 /* Footer Section */
 #footer {
   text-align: center;
-  padding: 7% 15%;
+  /* padding: 7% 15%; */
 }
 
 .footer-btn {
