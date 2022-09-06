@@ -1,0 +1,18 @@
+body {
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 99%, 1) 9%,
+    hsla(51, 100%, 78%, 1) 30%,
+    hsla(47, 100%, 63%, 1) 60%
+  );
+  background-attachment: fixed;
+}
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  margin: 5%;
+}
