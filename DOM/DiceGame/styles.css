@@ -25,17 +25,18 @@ p {
 
 .dice {
   text-align: center;
-  padding: 0 0 25px 0;
+  padding: 0 25px 25px 25px;
+  /* padding: 0 0 25px 0; */
   display: inline-block;
 }
 
 .img1,
 .img2 {
-  width: 25%;
+  width: 200px;
 }
 
-.hitMe {
-}
+/* .hitMe {
+} */
 
 .btn {
   background-color: #fbeee0;
