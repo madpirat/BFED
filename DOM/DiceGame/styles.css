@@ -1,33 +1,62 @@
+body {
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Fredoka One", cursive;
+  color: #381b13;
+}
+
+p {
+  font-size: 2rem;
+  font-family: "Fredoka One", sans-serif;
+  color: #381b13;
+}
+
 .container {
+  background-color: #2a9d8f;
   width: 70%;
   margin: auto;
+  border: 5px solid #422800;
+  border-radius: 25px;
   text-align: center;
 }
 
 .dice {
   text-align: center;
+  padding: 0 0 25px 0;
   display: inline-block;
 }
 
-body {
-  background-color: #606c38;
+.img1,
+.img2 {
+  width: 25%;
 }
 
-h1 {
-  margin: 30px;
-  font-family: "Fredoka One", cursive;
-  text-shadow: 5px 0 #232931;
-  font-size: 8rem;
-  color: #4ecca3;
+.hitMe {
 }
 
-p {
-  font-size: 2rem;
-  color: #4ecca3;
-  font-family: "Montserrat", sans-serif;
-  text-shadow: 3px 0 #232931;
+.btn {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Fredoka One", sans-serif;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  /* user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation; */
 }
 
-img {
-  width: 80%;
+.btn:hover {
+  background-color: #fff;
 }
