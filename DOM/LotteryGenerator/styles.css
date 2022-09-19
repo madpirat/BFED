@@ -3,7 +3,8 @@ body {
   font-family: "Barlow", sans-serif;
 }
 h1 {
-  margin-bottom: 20px;
+  padding-top: 20px;
+  margin: 10px;
 }
 
 p {
@@ -11,9 +12,9 @@ p {
 }
 
 span {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .container {
